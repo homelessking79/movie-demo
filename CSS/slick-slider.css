@@ -1,0 +1,70 @@
+
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+h3 {
+	background: #f0f0f0;
+	/* color: #3498db; */
+	font-size: 2.25rem;
+	margin: .5rem;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
+
+.slider-single h3 {
+	line-height: 10rem;
+}
+.slider-single{
+	width: 100%;
+}
+/* #page .row{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+} */
+.column{
+	background-color: rgba(0, 0, 0, 0.952);
+	padding: 0;
+}
+.slider-nav h3::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+.slider-nav{
+	margin-top: 30px;
+}
+.slider-nav img{
+	border-radius: 20px;
+	padding: 0 10px;
+	
+}
+
+.slick-slide{
+	opacity: 0.4;
+	transition: all 0.7s;
+}
+.is-active{
+	opacity: 1;
+
+	
+}
+.slick-slide:focus{
+	outline: none;
+}
+.slider-nav h3 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active h3 {
+	color: #c00;
+	background-color: #fff
+}
